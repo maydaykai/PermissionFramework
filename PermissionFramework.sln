@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{0ADEDEFB-E235-4A10-BF77-C546F2627363}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Client", "01_Client", "{B00A4932-ABEA-4A32-B093-342794FE869B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Infrastructure", "04_Infrastructure", "{021DAF53-0E43-4DFB-AD69-90A85D16DAC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Hosting", "02_Hosting", "{6E1893E4-C4EA-4B9D-AC77-B723B16C6F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Domain", "03_Domain", "{08BEAE16-EEFB-4032-B465-29D93D0C7E9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Database", "05_Database", "{3179E514-FD72-42D4-9F1F-DD2B73DB0F56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Tests", "06_Tests", "{B263A5B2-AD3D-4053-95B0-24E7ED15B18A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_ReferenceLibs", "07_ReferenceLibs", "{FAC9DA00-A177-428A-9878-69D610A9AB75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_Tools", "08_Tools", "{E753F265-02DD-4D9D-8358-0B0764FC9AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.WebUI", "App.WebUI\App.WebUI.csproj", "{1C3B76F8-FDA0-4328-A1DD-71317F11905A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +27,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0ADEDEFB-E235-4A10-BF77-C546F2627363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ADEDEFB-E235-4A10-BF77-C546F2627363}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ADEDEFB-E235-4A10-BF77-C546F2627363}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ADEDEFB-E235-4A10-BF77-C546F2627363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3B76F8-FDA0-4328-A1DD-71317F11905A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3B76F8-FDA0-4328-A1DD-71317F11905A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3B76F8-FDA0-4328-A1DD-71317F11905A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3B76F8-FDA0-4328-A1DD-71317F11905A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1C3B76F8-FDA0-4328-A1DD-71317F11905A} = {B00A4932-ABEA-4A32-B093-342794FE869B}
 	EndGlobalSection
 EndGlobal
