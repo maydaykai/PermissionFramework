@@ -4,13 +4,7 @@ namespace App.WebUI.Areas.SysManage
 {
     public class SysManageAreaRegistration : AreaRegistration
     {
-        public override string AreaName
-        {
-            get
-            {
-                return "SysManage";
-            }
-        }
+        public override string AreaName => "SysManage";
 
         public override void RegisterArea(AreaRegistrationContext context)
         {
@@ -18,7 +12,7 @@ namespace App.WebUI.Areas.SysManage
                 "SysManage_default",
                 "Sys/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                new string[] { "WebPage.Areas.SysManage.Controllers" }
+                new string[] { "App.WebUI.Areas.SysManage.Controllers" }
             );
         }
     }
