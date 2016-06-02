@@ -3,9 +3,8 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Runtime.Serialization.Json;
 using System.IO;
-using App.Common.ToolsHelper;
 
-namespace App.Common.JsonHelper
+namespace App.Common
 {
 
     /// <summary>

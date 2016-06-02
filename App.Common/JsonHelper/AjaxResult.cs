@@ -1,5 +1,5 @@
 ﻿using System.Web.Script.Serialization;
-namespace App.Common.JsonHelper
+namespace App.Common
 {
     /// <summary>
     /// 前台Ajax请求的统一返回结果类

@@ -585,7 +585,7 @@ namespace App.Service
         {
             List<object> list = QueryObject<TEntity, TOrderBy>
                  (where, orderby, selector, IsAsc);
-            return Common.JsonHelper.JsonConverter.JsonClass(list);
+            return Common.JsonConverter.JsonClass(list);
         }
         #endregion
 

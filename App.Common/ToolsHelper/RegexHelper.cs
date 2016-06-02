@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace App.Common.ToolsHelper
+namespace App.Common
 {
     /// <summary>
     /// 操作正则表达式的公共类

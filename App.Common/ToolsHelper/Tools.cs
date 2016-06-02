@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Web;
 using System.ComponentModel;
-using App.Common.JsonHelper;
 
-namespace App.Common.ToolsHelper
+namespace App.Common
 {
     /// <summary>
     /// 功能描述：共用工具类

@@ -1,5 +1,4 @@
 ﻿using App.Common;
-using App.Common.JsonHelper;
 using App.Service.IService;
 using System;
 using System.Collections.Generic;
@@ -49,7 +48,20 @@ namespace App.WebUI.Areas.SysManage.Controllers
                         log.Warn(Utils.GetIP(), item.ACCOUNT, Request.Url.ToString(), "Login", "系统登录，登录结果：" + json.Msg);
                         return Json(json);
                     }
+                    var account = UserManage.GetAccountByUser(users);
+                    //写入Session 当前登录用户
+                    SessionHelper.SetSession("CurrentUser", account);
+                    //记录用户信息到Cookies
+                    string cookievalue = "{\"id\":\"" + account.Id + "\",\"username\":\"" + account.LogName +
+                                                                    "\",\"password\":\"" + account.PassWord + "\",\"ToKen\":\"" +
+                                                                    Session.SessionID + "\"}";
+                    CookieHelper.SetCookie("cookie_rememberme", new Common.CryptHelper.AESCrypt().Encrypt(cookievalue), null);
+                    //更新用户本次登录IP
+                    users.LastLoginIP = Utils.GetIP();
+                    UserManage.Update(users);
+
                     json.Status = "y";
+                    json.ReUrl = "/Sys/Home/Index";
                     log.Info(Utils.GetIP(), item.ACCOUNT, Request.Url.ToString(), "Login", "系统登录，登录结果：" + json.Msg);
 
                 }

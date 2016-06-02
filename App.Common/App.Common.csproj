@@ -70,6 +70,14 @@
     <Compile Include="ToolsHelper\RegexHelper.cs" />
     <Compile Include="ToolsHelper\Tools.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="WebHelper\ApplicationCache.cs" />
+    <Compile Include="WebHelper\BindDataControl.cs" />
+    <Compile Include="WebHelper\CacheHelper.cs" />
+    <Compile Include="WebHelper\CookieHelper.cs" />
+    <Compile Include="WebHelper\JScript.cs" />
+    <Compile Include="WebHelper\QueryString.cs" />
+    <Compile Include="WebHelper\RupengPager.cs" />
+    <Compile Include="WebHelper\SessionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
