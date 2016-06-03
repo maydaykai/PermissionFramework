@@ -6,5 +6,15 @@
   <object type="App.WebUI.Areas.SysManage.Controllers.AccountController,App.WebUI" singleton="false">
     <property name="UserManage" ref="Service.User"/>
   </object>
+  <!--主页控制器-->
+  <object type="App.WebUI.Areas.SysManage.Controllers.HomeController,App.WebUI" singleton="false">
+    <property name="ModuleManage" ref="Service.Module"/>
+  </object>
+  <!--模块管理-->
+  <object type="App.WebUI.Areas.SysManage.Controllers.ModuleController,App.WebUI" singleton="false">
+    <property name="ModuleManage" ref="Service.Module"/>
+    <property name="ModuleManage" ref="Service.Module"/>
+    <property name="ModuleManage" ref="Service.Module"/>
+  </object>
   <!--系统管理 end-->
 </objects>

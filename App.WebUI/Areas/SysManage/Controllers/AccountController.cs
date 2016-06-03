@@ -13,7 +13,7 @@ namespace App.WebUI.Areas.SysManage.Controllers
         #region 声明容器
         /// <summary>
         /// 用户管理
-        /// add yuangang by 2016-05-16
+        /// add by 2016-05-16
         /// </summary>
         IUserManage UserManage { get; set; }
         /// <summary>
@@ -29,7 +29,7 @@ namespace App.WebUI.Areas.SysManage.Controllers
         }
         /// <summary>
         /// 登录验证
-        /// add yuangang by 2016-05-16
+        /// add by 2016-05-16
         /// </summary>
         [ValidateAntiForgeryToken]
         public ActionResult Login(Domain.SYS_USER item)

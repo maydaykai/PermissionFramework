@@ -13,7 +13,7 @@ namespace App.Common
 
         /// <summary>
         /// 自定义查询对象转换动态类
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
@@ -24,7 +24,7 @@ namespace App.Common
 
         /// <summary>
         /// object动态类转换json包
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>
         /// <param name="obj">对象</param>
         /// <param name="DateConvert">时间戳是否转换成日期类型</param>
@@ -48,7 +48,7 @@ namespace App.Common
 
         /// <summary>
         /// json转换object动态类
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>
         /// <param name="json"></param>
         /// <returns></returns>
@@ -113,7 +113,7 @@ namespace App.Common
 
         /// <summary>   
         /// DataSet转换为Json   
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>   
         /// <param name="dataSet">DataSet对象</param>   
         /// <returns>Json字符串</returns>   
@@ -129,7 +129,7 @@ namespace App.Common
         }
         /// <summary>  
         /// DataTable转成Json   
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>  
         /// <param name="jsonName"></param>  
         /// <param name="dt"></param>  
@@ -166,7 +166,7 @@ namespace App.Common
         }
         /// <summary>   
         /// Datatable转换为Json   
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>   
         /// <param name="table">Datatable对象</param>   
         /// <returns>Json字符串</returns>   
@@ -206,7 +206,7 @@ namespace App.Common
         }
         /// <summary>  
         /// 格式化字符型、日期型、布尔型  
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>  
         /// <param name="str"></param>  
         /// <param name="type"></param>  
@@ -242,7 +242,7 @@ namespace App.Common
         }
         /// <summary>  
         /// 过滤特殊字符  
-        /// add yuangang by 2015-05-19
+        /// add by 2015-05-19
         /// </summary>  
         /// <param name="s"></param>  
         /// <returns></returns>  
@@ -401,7 +401,7 @@ namespace App.Common
     }
     /// <summary>
     /// 动态JSON解析
-    /// add yuangang by 2015-05-19
+    /// add by 2015-05-19
     /// </summary>
     public class DynamicJsonObject : System.Dynamic.DynamicObject
     {
@@ -434,7 +434,7 @@ namespace App.Common
     }
     /// <summary>
     /// 动态JSON转换
-    /// add yuangang by 2015-05-19
+    /// add by 2015-05-19
     /// </summary>
     public class DynamicJsonConverter : JavaScriptConverter
     {

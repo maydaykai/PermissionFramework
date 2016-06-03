@@ -8,7 +8,7 @@ namespace App.Service.ServiceImp
 {
     /// <summary>
     /// Service层用户授权接口
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public class UserPermissionManage : RepositoryBase<Domain.SYS_USER_PERMISSION>, IService.IUserPermissionManage
     {

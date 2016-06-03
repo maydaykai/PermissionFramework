@@ -9,7 +9,7 @@ namespace Models
 {
     /// <summary>
     /// 验证码构造类
-    /// add yuangang by 2015-05-10
+    /// add by 2015-05-10
     /// </summary>
     public class verify_code
     {

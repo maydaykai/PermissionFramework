@@ -7,7 +7,7 @@ namespace App.Service.ServiceImp
 {
     /// <summary>
     /// 用户部门关系业务实现类
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public class UserDepartmentManage : RepositoryBase<Domain.SYS_USER_DEPARTMENT>, IService.IUserDepartmentManage
     {

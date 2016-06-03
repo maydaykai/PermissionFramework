@@ -13,7 +13,7 @@ namespace App.Service
 {
     /// <summary>
     /// 查询动态类
-    /// add yuangang by 2016-05-10
+    /// add by 2016-05-10
     /// </summary>
     public static class DatabaseExtensions
     {

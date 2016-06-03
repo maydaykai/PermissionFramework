@@ -8,7 +8,7 @@ namespace App.Common.Enums
 {
     /// <summary>
     /// 枚举独特类
-    /// add yuangang by 2016-05-10
+    /// add by 2016-05-10
     /// </summary>
     public class EnumsClass
     {
@@ -223,7 +223,7 @@ namespace App.Common.Enums
 
     /// <summary>
     /// 类描述:系统字典
-    /// 创建标识:add yuangang by 2016-05-10
+    /// 创建标识:add by 2016-05-10
     /// </summary>
     public class ClsDic
     {
@@ -259,7 +259,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// 描述:实体与编码对应字典,在验证数据权限时,通过此处字典来枚举实体编号
-        /// <author>创建标识: add yuangang by 2016-05-10</author>
+        /// <author>创建标识: add by 2016-05-10</author>
         /// </summary>
         public static Dictionary<string, string> DicEntity
         {
@@ -310,7 +310,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// 附件上传路径
-        /// 创建标识:add yuangang by 2016-05-10
+        /// 创建标识:add by 2016-05-10
         /// </summary>
         public static Dictionary<string, string> DicAttachmentPath
         {
@@ -329,7 +329,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// 业务办理图片宽高
-        /// 创建标识:add yuangang by 2016-05-10
+        /// 创建标识:add by 2016-05-10
         /// </summary>
         public static Dictionary<string, string> DicImageWH
         {
@@ -347,7 +347,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// 警务室图片宽高
-        /// 创建标识:add yuangang by 2016-05-10
+        /// 创建标识:add by 2016-05-10
         /// </summary>
         public static Dictionary<string, string> DicPoliceHouseImageWH
         {
@@ -361,7 +361,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// OracleReportData
-        /// 创建标识:add yuangang by 2016-05-10
+        /// 创建标识:add by 2016-05-10
         /// </summary>
         public static Dictionary<string, string> OracleReportData
         {
@@ -374,7 +374,7 @@ namespace App.Common.Enums
         }
         /// <summary>
         /// 手机客户端命名
-        /// 创建标识:add yuangang by 2016-05-10
+        /// 创建标识:add by 2016-05-10
         /// </summary>
         public static Dictionary<string, string> DicPhone
         {

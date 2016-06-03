@@ -56,6 +56,10 @@ namespace App.Service
         /// 用户可操作的模块集合
         /// </summary>
         public List<Domain.SYS_MODULE> Modules { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public List<string> System_Id { get; set; }
         #endregion
     }
 }

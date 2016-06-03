@@ -20,7 +20,7 @@ namespace App.Service.ServiceImp
         IPermissionManage PermissionManage { get; set; }
         /// <summary>
         /// 管理用户登录验证
-        /// add yuangang by 2016-05-12
+        /// add by 2016-05-12
         /// </summary>
         /// <param name="useraccount">用户名</param>
         /// <param name="password">加密密码（AES）</param>
@@ -212,7 +212,7 @@ namespace App.Service.ServiceImp
     }
     /// <summary>
     /// 权限去重，非常重要
-    /// add yuangang by 2015-08-03
+    /// add by 2015-08-03
     /// </summary>
     public class PermissionDistinct : IEqualityComparer<Domain.SYS_PERMISSION>
     {

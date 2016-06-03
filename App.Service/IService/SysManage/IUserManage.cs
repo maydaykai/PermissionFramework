@@ -8,7 +8,7 @@ namespace App.Service.IService
 {
     /// <summary>
     /// Service层基本用户信息接口
-    /// add yuangang by 2016-05-12
+    /// add by 2016-05-12
     /// </summary>
     public interface IUserManage : IRepository<Domain.SYS_USER>
     {

@@ -7,13 +7,13 @@ namespace App.Service.IService
 {
     /// <summary>
     /// Service层部门管理接口
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public interface IDepartmentManage : IRepository<Domain.SYS_DEPARTMENT>
     {
         /// <summary>
         /// 递归部门列表，返回按级别排序
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// </summary>
         /// <param name="list"></param>
         /// <returns></returns>
@@ -21,12 +21,12 @@ namespace App.Service.IService
 
         /// <summary>
         /// 根据部门ID递归部门列表，返回子部门+本部门的对象集合
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// </summary>
         List<Domain.SYS_DEPARTMENT> RecursiveDepartment(string parentId);
         /// <summary>
         /// 自动创建部门编号
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// </summary>
         string CreateCode(string parentCode);
 

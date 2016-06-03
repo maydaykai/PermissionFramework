@@ -7,7 +7,7 @@ namespace App.Service.IService
 {
     /// <summary>
     /// Service 授权验证模块对应接口
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public interface IPermissionManage : IRepository<Domain.SYS_PERMISSION>
     {

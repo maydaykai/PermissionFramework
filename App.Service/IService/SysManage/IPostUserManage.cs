@@ -7,7 +7,7 @@ namespace App.Service.IService
 {
     /// <summary>
     /// 岗位用户关系业务接口
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public interface IPostUserManage : IRepository<Domain.SYS_POST_USER>
     {

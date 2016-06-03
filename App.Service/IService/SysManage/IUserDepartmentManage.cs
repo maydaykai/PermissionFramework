@@ -7,7 +7,7 @@ namespace App.Service.IService
 {
     /// <summary>
     /// 用户部门关系业务接口
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public interface IUserDepartmentManage : IRepository<Domain.SYS_USER_DEPARTMENT>
     {

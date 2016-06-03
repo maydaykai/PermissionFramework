@@ -12,7 +12,7 @@ namespace App.Service
 {
     /// <summary>
     /// 所有的数据操作基类接口
-    /// add yuangang by 2016-05-09
+    /// add by 2016-05-09
     /// </summary>
     public interface IRepository<T> where T : class
     {

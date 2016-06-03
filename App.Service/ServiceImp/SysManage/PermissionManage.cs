@@ -9,7 +9,7 @@ namespace App.Service.ServiceImp
 {
     /// <summary>
     /// Service 授权模块关系处理类
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public class PermissionManage : RepositoryBase<Domain.SYS_PERMISSION>, IService.IPermissionManage
     {

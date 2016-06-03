@@ -8,13 +8,13 @@ namespace App.Service.ServiceImp
 {
     /// <summary>
     /// Service层部门管理
-    /// add yuangang by 2016-05-19
+    /// add by 2016-05-19
     /// </summary>
     public class DepartmentManage : RepositoryBase<Domain.SYS_DEPARTMENT>, IService.IDepartmentManage
     {
         /// <summary>
         /// 自动创建部门编号
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// <param name="parentId">上级部门ID 注：ID不是Code，数据表已改</param>
         /// </summary>
         public string CreateCode(string parentId)
@@ -91,7 +91,7 @@ namespace App.Service.ServiceImp
         }
         /// <summary>
         /// 功能描述:根据传入的数字 返回补码后的3位部门编号
-        /// 创建标号:add yuangang by 2016-05-19
+        /// 创建标号:add by 2016-05-19
         /// </summary>
         public string FormatCode(int dptCode)
         {
@@ -131,7 +131,7 @@ namespace App.Service.ServiceImp
 
         /// <summary>
         /// 递归部门列表，返回排序后的对象集合
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// </summary>
         public List<Domain.SYS_DEPARTMENT> RecursiveDepartment(List<Domain.SYS_DEPARTMENT> list)
         {
@@ -145,7 +145,7 @@ namespace App.Service.ServiceImp
 
         /// <summary>
         /// 根据部门ID递归部门列表，返回子部门+本部门的对象集合
-        /// add yuangang by 2016-05-19
+        /// add by 2016-05-19
         /// </summary>
         public List<Domain.SYS_DEPARTMENT> RecursiveDepartment(string parentId)
         {
