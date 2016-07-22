@@ -86,5 +86,10 @@ namespace App.WebUI.Controllers
             if (!string.IsNullOrEmpty(size) && System.Text.RegularExpressions.Regex.IsMatch(size.ToString(), @"^\d+$")) { pagesize = int.Parse(size.ToString()); } else { pagesize = 10; }
             #endregion
         }
+
+        public void WriteLog(Common.Enums.enumOperator oper, string message, Exception ex)
+        {
+            
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace App.Service.IService
 {
     public class ISystemManage
     {
+
     }
 }

@@ -31,11 +31,22 @@ namespace App.WebUI.Areas.SysManage.Controllers
         [UserAuthorizeAttribute(ModuleAlias = "Module", OperaAction = "View")]/*验证用户对Module模块是否有View(查看)权限*/
         public ActionResult Index()
         {
-            var systems = Request.QueryString["System"];
-            ViewBag.Search = keywords;
-            ViewData["System"] = systems;
-            ViewData["SystemList"] = SystemManage;
-            return View(BindList(systems));
+            try
+            {
+                #region 处理查询参数
+                var systems = Request.QueryString["System"];
+                ViewBag.Search = keywords;
+                ViewData["System"] = systems;
+                ViewData["SystemList"] = SystemManage;
+                #endregion
+
+                return View(BindList(systems));
+            }
+            catch (Exception ex)
+            {
+                //WriteLog
+                throw ex.InnerException;
+            }
         }
 
         private object BindList(string systems)

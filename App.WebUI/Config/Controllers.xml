@@ -13,8 +13,14 @@
   <!--模块管理-->
   <object type="App.WebUI.Areas.SysManage.Controllers.ModuleController,App.WebUI" singleton="false">
     <property name="ModuleManage" ref="Service.Module"/>
+    <property name="PermissionManage" ref="Service.Permission"/>
+    <property name="SystemManage" ref="Service.System"/>
+  </object>
+  <!--权限管理-->
+  <object type="App.WebUI.Areas.SysManage.Controllers.PermissionController,App.WebUI" singleton="false">
     <property name="ModuleManage" ref="Service.Module"/>
-    <property name="ModuleManage" ref="Service.Module"/>
+    <property name="PermissionManage" ref="Service.Permission"/>
+    <property name="SystemManage" ref="Service.System"/>
   </object>
   <!--系统管理 end-->
 </objects>
