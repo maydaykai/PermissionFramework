@@ -69,6 +69,7 @@
     <Compile Include="ServiceImp\SysManage\ModuleManage.cs" />
     <Compile Include="ServiceImp\SysManage\PermissionManage.cs" />
     <Compile Include="ServiceImp\SysManage\PostUserManage.cs" />
+    <Compile Include="ServiceImp\SysManage\SystemManage.cs" />
     <Compile Include="ServiceImp\SysManage\UserDepartmentManage.cs" />
     <Compile Include="ServiceImp\SysManage\UserInfoManage.cs" />
     <Compile Include="ServiceImp\SysManage\UserManage.cs" />
@@ -94,7 +95,9 @@
     <Folder Include="ServiceImp\ComManage\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Config\ComService.xml" />
+    <EmbeddedResource Include="Config\ComService.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Config\Service.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

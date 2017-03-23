@@ -4,6 +4,36 @@
   <!--系统管理begin-->
   <!--用户管理-->
   <object id="Service.User" type="App.Service.ServiceImp.UserManage,App.Service" singleton="false">
+    <property name="UserInfoManage" ref="Service.UserInfo"/>
+    <property name="UserRoleManage" ref="Service.UserRole"/>
+    <property name="UserPermissionManage" ref="Service.UserPermission"/>
+    <property name="PostUserManage" ref="Service.PostUser"/>
+    <property name="PermissionManage" ref="Service.Permission"/>
+    <property name="DepartmentManage" ref="Service.Department"/>
+  </object>
+
+  <object id="Service.UserInfo" type="App.Service.ServiceImp.UserInfoManage,App.Service" singleton="false">
+  </object>
+
+  <object id="Service.UserRole" type="App.Service.ServiceImp.UserRoleManage,App.Service" singleton="false">
+  </object>
+
+  <object id="Service.PostUser" type="App.Service.ServiceImp.PostUserManage,App.Service" singleton="false">
+  </object>
+
+  <object id="Service.UserPermission" type="App.Service.ServiceImp.UserPermissionManage,App.Service" singleton="false">
+  </object>
+
+  <object id="Service.Department" type="App.Service.ServiceImp.DepartmentManage,App.Service" singleton="false">
+  </object>
+  <!--模块管理-->
+  <object id="Service.Module" type="App.Service.ServiceImp.ModuleManage,App.Service" singleton="false">
+  </object>
+  <!--权限管理-->
+  <object id="Service.Permission" type="App.Service.ServiceImp.PermissionManage,App.Service" singleton="false">
+  </object>
+  <!--权限管理-->
+  <object id="Service.System" type="App.Service.ServiceImp.SystemManage,App.Service" singleton="false">
   </object>
   <!--系统管理end-->
 </objects>

@@ -16,8 +16,13 @@ namespace App.WebUI.Areas.SysManage.Controllers
         // GET: SysManage/Home
         public ActionResult Index()
         {
-            ViewData["Module"] = ModuleManage.GetModule(CurrentUser.Id, CurrentUser.Permissions, CurrentUser.System_Id);
-            return View(this.CurrentUser);
+            //ViewData["Module"] = ModuleManage.GetModule(CurrentUser.Id, CurrentUser.Permissions, CurrentUser.System_Id);
+            //return View(this.CurrentUser);
+            return View();
+        }
+        public ActionResult Index_v1()
+        {
+            return View();
         }
     }
 }

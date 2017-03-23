@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using App.Domain;
 
 namespace App.Service.ServiceImp
 {
@@ -208,6 +209,15 @@ namespace App.Service.ServiceImp
                 return "";
             var dptid = this.Get(p => p.ID == id).DPTID;
             return this.DepartmentManage.Get(p => p.ID == dptid).NAME;
+        }
+
+        public bool Add(SYS_USER user)
+        {
+            try
+            {
+                return Save(user);
+            }
+            catch (Exception e) { throw e.InnerException; }
         }
     }
     /// <summary>

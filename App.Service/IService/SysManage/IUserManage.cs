@@ -39,6 +39,8 @@ namespace App.Service.IService
         /// 删除用户
         /// </summary>
         bool Remove(int userId);
+
+        bool Add(Domain.SYS_USER user);
         /// <summary>
         /// 根据用户构造用户基本信息
         /// </summary>

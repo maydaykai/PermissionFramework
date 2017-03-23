@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace App.Service.IService
 {
-    public class ISystemManage
+    public interface ISystemManage
     {
-
+        dynamic LoadSystemInfo(List<string> systems);
     }
 }

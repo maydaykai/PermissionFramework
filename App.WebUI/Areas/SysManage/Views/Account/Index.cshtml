@@ -14,8 +14,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="~/Content/bootstrap.min.css?v=3.3.5" rel="stylesheet">
     <link href="~/Content/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="~/Content/animate.min.css" rel="stylesheet">
-    <link href="~/Content/style.min.css?v=4.0.0" rel="stylesheet">
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css?v=4.0.0" rel="stylesheet">
     <!--[if lt IE 8]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -63,17 +63,18 @@
         </div>
     </div>
     <script src="~/Scripts/jquery.min.js?v=2.1.4"></script>
-    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
     <script src="~/Scripts/bootstrap.min.js?v=3.3.5"></script>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
     <script type="text/javascript">
         var dig = {
             Loading: function() {
-                $("#login-button").attr("disabled", "disabled");;
+                $("#login-button").attr("disabled", "disabled");
             },
             Success: function(result) {
                 if (result.Status == "y") {
-                    alert(result.Msg)
+                    alert(result.Msg);
+                    window.top.location.href = result.ReUrl;
                 } else {
                     alert(result.Msg);
                     dig.Complete();

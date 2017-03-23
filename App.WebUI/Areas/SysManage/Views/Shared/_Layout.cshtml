@@ -17,8 +17,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="~/Content/bootstrap.min.css?v=3.3.5" rel="stylesheet">
     <link href="~/Content/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="~/Content/animate.min.css" rel="stylesheet">
-    <link href="~/Content/style.min.css?v=4.0.0" rel="stylesheet">
+    <link href="~/Content/animate.css" rel="stylesheet">
+    <link href="~/Content/style.css?v=4.0.0" rel="stylesheet">
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
@@ -66,7 +66,7 @@
                                 <a class="J_menuItem" href="index_v1.html" data-index="0">主页示例一</a>
                             </li>
                             <li>
-                                <a class="J_menuItem" href="index_v2.html">主页示例二</a>
+                                <a class="J_menuItem" href="@Url.Action("Index", "Module")">主页示例二</a>
                             </li>
                             <li>
                                 <a class="J_menuItem" href="index_v3.html">主页示例三</a>
@@ -499,11 +499,10 @@
                 <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="/sys/account/index" frameborder="0" data-id="index_v1.html" seamless></iframe>
                 @RenderBody()
             </div>
             <div class="footer">
-                <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
+                <div class="pull-right">&copy; 2014-2017 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
                 </div>
             </div>
         </div>
@@ -922,8 +921,8 @@
     <script src="~/Scripts/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="~/Scripts/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="~/Scripts/plugins/layer/layer.min.js"></script>
-    <script src="~/Scripts/hplus.min.js?v=4.0.0"></script>
-    <script type="text/javascript" src="~/Scripts/contabs.min.js"></script>
+    <script src="~/Scripts/hplus.js?v=4.0.0"></script>
+    <script type="text/javascript" src="~/Scripts/contabs.js"></script>
     <script src="~/Scripts/plugins/pace/pace.min.js"></script>
 </body>
 

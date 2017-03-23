@@ -28,7 +28,7 @@ namespace App.WebUI.Areas.SysManage.Controllers
         /// 模块管理加载首页
         /// </summary>
         /// <returns></returns>
-        [UserAuthorizeAttribute(ModuleAlias = "Module", OperaAction = "View")]/*验证用户对Module模块是否有View(查看)权限*/
+        //[UserAuthorizeAttribute(ModuleAlias = "Module", OperaAction = "View")]/*验证用户对Module模块是否有View(查看)权限*/
         public ActionResult Index()
         {
             try
@@ -64,21 +64,35 @@ namespace App.WebUI.Areas.SysManage.Controllers
                 query = query.Where(p => CurrentUser.System_Id.Any(e => e == p.FK_BELONGSYSTEM));
             }
             //递归排序（无分页）
-            var entity = ModuleManage.RecursiveModule(query.ToList())
-                .Select(p => new
-                {
-                    p.ID,
-                    MODULENAME = GetModuleName(p.NAME, p.LEVELS),
-                    p.ALIAS,
-                    p.MODULEPATH,
-                    p.SHOWORDER,
-                    p.ICON,
-                    MODULETYPE = ((Common.Enums.enumModuleType)p.MODULETYPE).ToString(),
-                    ISSHOW = p.ISSHOW ? "显示":"隐藏",
-                    p.NAME,
-                    SYSNAME = p.SYS_SYSTEM.NAME,
-                    p.FK_BELONGSYSTEM
-                });
+            //var entity = ModuleManage.RecursiveModule(query.ToList())
+            //    .Select(p => new
+            //    {
+            //        p.ID,
+            //        MODULENAME = GetModuleName(p.NAME, p.LEVELS),
+            //        p.ALIAS,
+            //        p.MODULEPATH,
+            //        p.SHOWORDER,
+            //        p.ICON,
+            //        MODULETYPE = ((Common.Enums.enumModuleType)p.MODULETYPE).ToString(),
+            //        ISSHOW = p.ISSHOW ? "显示":"隐藏",
+            //        p.NAME,
+            //        SYSNAME = p.SYS_SYSTEM.NAME,
+            //        p.FK_BELONGSYSTEM
+            //    });
+            var entity = new Models.ModuleViewModel
+            {
+                ID = 1,
+                MODULENAME = "主页",
+                ALIAS = "高效",
+                MODULEPATH = "",
+                SHOWORDER = "",
+                ICON = "",
+                MODULETYPE = "",
+                ISSHOW = "显示",
+                NAME = "",
+                SYSNAME = "",
+                BELONGSYSTEM = ""
+            };
             return Common.JsonConverter.JsonClass(entity);
         }
 
