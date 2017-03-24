@@ -49,7 +49,7 @@ namespace App.WebUI.Areas.SysManage.Controllers
             }
         }
 
-        private object BindList(string systems)
+        private IList<Models.ModuleViewModel> BindList(string systems)
         {
             //预加载所有模块
             var query = ModuleManage.LoadAll(null);
@@ -84,16 +84,17 @@ namespace App.WebUI.Areas.SysManage.Controllers
                 ID = 1,
                 MODULENAME = "主页",
                 ALIAS = "高效",
-                MODULEPATH = "",
-                SHOWORDER = "",
+                MODULEPATH = "/baidu.com/",
+                SHOWORDER = "1",
                 ICON = "",
                 MODULETYPE = "",
                 ISSHOW = "显示",
-                NAME = "",
-                SYSNAME = "",
+                NAME = "发发发",
+                SYSNAME = "搞搞搞",
                 BELONGSYSTEM = ""
             };
-            return Common.JsonConverter.JsonClass(entity);
+            return new List<Models.ModuleViewModel> { entity };
+            //return Common.JsonConverter.JsonClass(entity);
         }
 
         private object GetModuleName(string name, decimal? level)
