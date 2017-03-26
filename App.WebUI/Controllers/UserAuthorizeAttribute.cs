@@ -65,7 +65,7 @@ namespace App.WebUI.Controllers
             }
             #endregion
             //3、调用下面的方法，验证是否有访问此页面的权限，查看加操作
-            var moduleId = baseController.CurrentUser.Modules.Where(p => p.ALIAS.ToLower() == alias.ToLower()).Select(p => p.ID).FirstOrDefault();
+            var moduleId = baseController.CurrentUser.Modules.Where(p => String.Equals(p.ALIAS, alias, StringComparison.CurrentCultureIgnoreCase)).Select(p => p.ID).FirstOrDefault();
             bool _blAllowed = this.IsAllowed(baseController.CurrentUser, moduleId, OperaAction);
             if (!_blAllowed)
             {

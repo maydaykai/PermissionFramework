@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using App.Common.Enums;
+using log4net.Ext;
 
 namespace App.WebUI.Controllers
 {
@@ -29,6 +31,7 @@ namespace App.WebUI.Controllers
         /// </summary>
         public IUserManage UserManage = Spring.Context.Support.ContextRegistry.GetContext().GetObject("Service.User") as IUserManage;
         #endregion
+        protected IExtLog _log = ExtLogManager.GetLogger("dblog");
         #region 用户对象
         /// <summary>
         /// 获取当前用户对象
@@ -87,9 +90,25 @@ namespace App.WebUI.Controllers
             #endregion
         }
 
-        public void WriteLog(Common.Enums.enumOperator oper, string message, Exception ex)
+        public void WriteLog(enumOperator action, string message, enumLog4net logLevel)
         {
-            
+            switch (logLevel)
+            {
+                case enumLog4net.INFO:
+                    _log.Info(Utils.GetIP(), CurrentUser.Name, Request.Url.ToString(), action.ToString(), message);
+                    return;
+                case enumLog4net.WARN:
+                    _log.Warn(Utils.GetIP(), CurrentUser.Name, Request.Url.ToString(), action.ToString(), message);
+                    return;
+                default:
+                    _log.Error(Utils.GetIP(), CurrentUser.Name, Request.Url.ToString(), action.ToString(), message);
+                    return;
+            }
+        }
+
+        public void WriteLog(enumOperator action, string message, Exception e)
+        {
+            _log.Fatal(Utils.GetIP(), CurrentUser.Name, Request.Url.ToString(), action.ToString(), message + e.Message, e);
         }
     }
 }

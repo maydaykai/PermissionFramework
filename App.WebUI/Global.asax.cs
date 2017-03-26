@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using App.WebUI.Areas.SysManage.Models;
 
 namespace App.WebUI
 {
@@ -13,6 +14,7 @@ namespace App.WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            AutoMapperBootStrapper.ConfigureAutoMapper();
         }
     }
 }
